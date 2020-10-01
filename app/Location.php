@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Location extends Model
 {
-    protected $table = [
+    protected $fillable = [
       'name',
       'city',
       'state'
     ];
 
     public function employees(){
-      return $this -> belongsToMany(Employee::Class);
+      return $this -> belongsToMany(Employee::class);
     }
 }
