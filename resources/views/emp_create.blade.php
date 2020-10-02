@@ -23,8 +23,8 @@
         <input type="date" name="BD">
       </div>
       <div class="form">
-        <label for="BD">location</label>
-        <select name="location">
+        <label for="location_id">location</label>
+        <select name="location_id">
           @foreach ($locs as $loc)
               <option value="{{$loc ->id}} ">{{$loc ->city}}-{{$loc->state}} </option>
           @endforeach
