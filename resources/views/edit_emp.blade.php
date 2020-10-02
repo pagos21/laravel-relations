@@ -25,7 +25,7 @@
         <select name="location_id">
           @foreach ($locs as $loc)
               <option value="{{$loc ->id}} "
-                @if ($loc->id == $emp->location->id)
+                @if ($loc->id == $emp->location_id)
                     selected
                 @endif
                 >{{$loc ->city}}-{{$loc->state}}</option>
