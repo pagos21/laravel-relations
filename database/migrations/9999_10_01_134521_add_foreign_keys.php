@@ -26,8 +26,7 @@ class AddForeignKeys extends Migration
 
         $table  -> foreign('task_id', 'emp-tas')
                 -> references('id')
-                -> on('tasks')
-                -> onDelete('cascade');
+                -> on('tasks');
       });
   }
 

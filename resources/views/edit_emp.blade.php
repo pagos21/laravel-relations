@@ -19,15 +19,15 @@
         <label for="BD">Birth_Day</label>
         <input type="date" name="BD" value="{{$emp->BD}}">
       </div>
+
       <div class="form">
-        <label for="BD">location</label>
-        <select name="location">
+        <label for="Location_id">location</label>
+        <select name="location_id">
           @foreach ($locs as $loc)
               <option value="{{$loc ->id}} "
                 @if ($loc->id == $emp->location->id)
                     selected
                 @endif
-                
                 >{{$loc ->city}}-{{$loc->state}}</option>
           @endforeach
         </select>

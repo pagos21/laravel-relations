@@ -27,7 +27,6 @@ class EmployeeCtrl extends Controller
         $locs = Location::all();
         return view('edit_emp', compact('emp', 'locs'));
     }
-
     public function update(Request $request, $id){
         $data = $request ->all();
         $emp = Employee::findOrFail($id);
